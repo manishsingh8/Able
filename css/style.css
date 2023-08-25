@@ -11,7 +11,8 @@ h1,h2,h3,h4,h5,h6 {
 }
 h1{
   font-weight: 900;
-  margin:0px;
+  font-size: 54px;
+  /* margin:0px; */
 }
 
 /* button */
@@ -160,6 +161,52 @@ header {
   }
 
 
+/* work section start */
+
+  .work_section{
+    background-color: #F8F8F8;
+    padding: 80px 0px;
+  }
+  .work_section .container-fluid{
+    display: flex;
+    justify-content: space-between;
+  }
+  .work_img{
+    width:40%;
+  }
+  .work_img img{
+    width:100%;
+    border-radius:0px 30px 0px 0px ;
+  }
+  .work_text{
+    width:50%;
+    display: flex;
+    align-items: center;
+  }
+  .work_textinner{
+    width:100%;
+  }
+  .work_heading{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+  }
+  .work_heading p{
+    font-weight: 700;
+    color:#123C7B;
+    font-size: 24px;
+  }
+  .accordion-item{
+    margin-top: 40px;
+  }
+
+
+
+
+
+
+
+
 
   /* form-section start */
   .form_section{
@@ -182,7 +229,6 @@ header {
     align-items: center;
   }
   .form_heading p{
-    margin-top: 15px;
     color: #123C7B;
   }
   .from_inner{
@@ -202,6 +248,7 @@ header {
     margin-bottom: 0px;
   }
 
+  /* form section ends */
 
 
 
@@ -315,6 +362,15 @@ header {
     height: 100%;
     font-size: 25px;
   }
+  .work_img{
+    display: none;
+  }
+  .work_img img{
+    display: none;
+  }
+.work_text{
+width:100%;
+}
   .form_maindiv{
     width:80%;
   }

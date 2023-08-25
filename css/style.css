@@ -167,22 +167,13 @@ header {
     justify-content: center;
     align-items: center;
     padding: 80px 0px;
-    position:relative;
+    background-image: url("../img/Rectangle\ 147.svg");
+    background-repeat: no-repeat;
+    background-position: right 70%;
+
   }
   .form_maindiv{
     width:50%;
-  }
-  .form_recimg{
-    border:1px solid red;
-    /* height: 100%; */
-    width: 100%;
-  }
-  .form_recimg img{
-    position: absolute;
-    right: 10px;
-    top: -134%;
-    z-index:1;
-
   }
 
   .form_heading{
@@ -260,6 +251,7 @@ header {
   }
   .footer_litem h5{
     margin-bottom: 20px;
+    color: #FFFFFF;
   }
   .footer_litem li{
         margin-top: 15px;
@@ -326,7 +318,9 @@ header {
   .form_maindiv{
     width:80%;
   }
-
+  .form_section{
+    background-image: none;
+  }
 }
 @media screen and (max-width: 600px) {
   .ht1 {

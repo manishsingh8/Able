@@ -9,6 +9,9 @@ h1,h2,h3,h4,h5,h6 {
   font-family: 'Satosi';
   color:#123C7B;
 }
+p{
+  font-size: 20px;
+}
 h1{
   font-weight: 900;
   font-size: 54px;
@@ -160,6 +163,116 @@ header {
     margin-right: 0px;
   }
 
+/* mapsection start */
+
+.map_section{
+  background-color:#F8F8F8; 
+}
+
+.map_main{
+  width:100%;
+  display: flex;
+}
+.map_imgdiv{
+  width:50%;
+}
+.map_img{
+  width:100%;
+}
+.map_text{
+  width:50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mat_textinner{
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.mat_textinner p{
+  text-align: justify;
+}
+.map_heading{
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.map_btn{
+  border-radius: 50%;
+  padding: 0px;
+  min-width: 26px;
+}
+.map_btn2{
+  margin-top: 40px;
+}
+
+
+
+
+/* carousel section */
+.carousel_main{
+  padding:0px 40px;
+  width:100%;
+}
+.crousel_inner{
+  width:100%;
+}
+.owl-carousel {
+  position: relative;
+}
+
+.crousel_inner .item {
+  width: 100%;
+  position: relative;
+  top: -40px;
+  z-index:999;
+}
+
+.crousel_inner .item img {
+  width: 100%;
+}
+
+.owl-theme .owl-dots{
+  display:none;
+}
+
+.owl-theme .owl-nav{
+  position: absolute;
+  bottom: 10%;
+  width: 100%;
+  font-size: 35px !important;
+  padding: 4px 7px !important;
+}
+.owl-nav button.owl-next ,button.owl-prev{
+ background-color: #123C7B !important;
+ border:1px solid black !important;
+ color:#FFFFFF !important;
+ width:42px !important;
+ border-radius: 50% !important;
+ transition: .3s ease all;
+
+
+}
+.owl-nav button.owl-next span ,button.owl-prev span{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 7px !important;
+}
+
+.owl-nav button.owl-next:hover{
+  transform: scale(1.1);
+}
+.owl-nav button.owl-prev:hover{
+  transform: scale(1.1);
+}
+
+
+
+
 
 /* work section start */
 
@@ -182,6 +295,7 @@ header {
     width:50%;
     display: flex;
     align-items: center;
+    padding:40px;
   }
   .work_textinner{
     width:100%;
@@ -199,8 +313,12 @@ header {
   .accordion-item{
     margin-top: 40px;
   }
+  .accordion-button{
+    font-size: 32px;
+    color:#123C7B;
+  }
 
-
+/* work section end */
 
 
 
@@ -362,6 +480,25 @@ header {
     height: 100%;
     font-size: 25px;
   }
+
+ .map_imgdiv{
+  display: none;
+ }
+ .map_text {
+  width:100%;
+  padding: 40px;
+ }
+ .owl-theme .owl-nav{
+  font-size: 24px;
+  bottom:12%;
+ }
+ .owl-nav button.owl-next, button.owl-prev{
+    background-color: white !important;
+    border: none !important;
+    color: black !important;
+
+ } 
+
   .work_img{
     display: none;
   }
@@ -382,6 +519,7 @@ width:100%;
   .ht1 {
     display: none;
   }
+  
 }
 
 

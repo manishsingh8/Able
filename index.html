@@ -109,14 +109,49 @@
       <!--Header Ends-->
 
     <!-- map section -->
-    <section>
-      
+    <section class="map_section">
+     <div class="container-fluid">
+      <div class="map_main">
+        <div class="map_imgdiv">
+          <img src="img/Rectangle.svg" alt="" class="map_img">
+        </div>
+        <div class="map_text">
+          <div class="mat_textinner">
+            <p>We have built our company with one goal in mind, to exceed Customer expectations.</p>
+            <p>Find us at our current locations in</p>
+            <div class="map_heading">
+            <h4>New York <button class="custom_button map_btn">1</button></h4>
+            <h4>Pennsylvania <button class="custom_button map_btn">2</button></h4>
+            <h4>New Jersey <button class="custom_button map_btn">HQ</button></h4>
+            </div>
+            <button class="custom_button map_btn2">Request A Quote</button>
+          </div>
+        </div>
+      </div>
+      <div>
+      </div>
+     </div>
     </section>
 
+    <!-- carousel section -->
+      
+    <section>
+      <div class="carousel_main">
+        <div class="crousel_inner">
+          <div class="owl-carousel owl-theme">
+            <div class="item"><img src="img/Group 145.jpg" alt=""></div>
+            <div class="item"><img src="img/Group 145.jpg" alt=""></div>
+            <div class="item"><img src="img/Group 145.jpg" alt=""></div>
+            <div class="item"><img src="img/Group 145.jpg" alt=""></div>
+          </div>
+          </div>
+      </div>
+    </section>
 
+    <!-- carousel section ends -->
 
+<!-- Work Section Start -->
 
-      <!--Banner Starts-->
       <section class="work_section">
           <div class="container-fluid">
             <div class="work_img">
@@ -133,7 +168,7 @@
                    <div class="accordion-item">
                      <h2 class="accordion-header">
                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                        01 EnaBle
+                        01 EnAble
                        </button>
                      </h2>
                      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
@@ -164,14 +199,13 @@
                    </div>
                  </div>
                 </div>
-
               </div>
-
             </div>
           </div>
 
       </section>
-      <!--Banner Ends-->
+      
+      <!-- Wrok Section Ends -->
 
 
 
@@ -310,29 +344,6 @@
 
     <!-- JS Starts-->
 
-    <script>
-      // Optional: If you want to close the list when the cursor moves away from it
-      const showList = document.getElementById("show_list");
-      const listItem = document.querySelector(".list_item");
-
-      listItem.addEventListener("mouseleave", () => {
-        listItem.style.display = "none";
-      });
-
-      showList.addEventListener("mouseenter", () => {
-        listItem.style = "display:block;";
-      });
-
-    // accordian
-  // Wait for the document to load
-  document.addEventListener("DOMContentLoaded", function () {
-    // Get the accordion items
-    const accordionItems = document.querySelectorAll(".accordion-item");
-
-    // Open the first item by adding the 'show' class
-    accordionItems[0].querySelector(".accordion-collapse").classList.add("show");
-  });
-    </script>
 
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -343,6 +354,49 @@
     <script src="js/custom.js"></script>
     <script>
       AOS.init();
+    </script>
+    
+    <script>
+      // Optional: If you want to close the list when the cursor moves away from it
+      const showList = document.getElementById("show_list");
+      const listItem = document.querySelector(".list_item");
+      listItem.addEventListener("mouseleave", () => {
+        listItem.style.display = "none";
+      });
+      showList.addEventListener("mouseenter", () => {
+        listItem.style = "display:block;";
+      });
+
+    // accordian start
+  document.addEventListener("DOMContentLoaded", function () {
+    const accordionItems = document.querySelectorAll(".accordion-item");
+    accordionItems[0].querySelector(".accordion-collapse").classList.add("show");
+  });
+
+  // accordian ends
+
+ 
+  // owl carousel start
+  $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+})
+
+
+// owl carousel ends
+
     </script>
 
     <!-- JS Ends-->
@@ -355,3 +409,7 @@
 
 
 <!-- https://www.figma.com/file/QPOIG8ZBCxQf63jTYCAOSa/Able-(Copy)?type=design&node-id=1006%3A27558&mode=design&t=1pxAfAUcvV1pShFa-1 -->
+
+
+
+<!-- swiper owlcarousel -->

@@ -18,25 +18,25 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&family=Open+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link href="css/normalize.css" rel="stylesheet" />
     <link href="css/animate.css" rel="stylesheet" />
     <link href="css/owl.carousel.min.css" rel="stylesheet" />
     <link href="css/owl.theme.default.min.css" rel="stylesheet" />
     <link href="css/aos.css" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
-      rel="stylesheet"
-    />
     <link href="css/style.css" rel="stylesheet" />
     <!-- CSS Ends-->
   </head>
 
   <!-- Body Starts-->
 
-  <body>
+  <body id="main_body">
     <!-- Side Menu Starts-->
 
     <!-- Side Menu Ends-->
@@ -46,7 +46,7 @@
       <!--Header Starts-->
 
       <header>
-        <div class="container">
+        <div class="header_main">
           <div class="header_top ht1">
             <div class="hdt_in left">
               <ul>
@@ -94,42 +94,121 @@
                 <li><a href="">ABOUT US</a></li>
                 <li class="last-child"><a href="">REQUEST A QUOTE</a></li>
                 <div class="hamburger dropdown-trigger">
-                  <i class="fa-solid fa-bars"></i>
-                  <div class="dropdown-content2">
-                    <ul>
-                      <li><a href="">Motoring</a></li>
-                      <li><a href="">Home</a></li>
-                      <li><a href="">Life</a></li>
-                      <li><a href="">Business</a></li>
-                      <li><a href="">Travel</a></li>
-                    </ul>
-                  </div>
+                  <span id="hamburger_icon"
+                    ><i class="fa-solid fa-bars"></i
+                  ></span>
+                  <span id="cross_icon">
+                    <i class="fa-solid fa-xmark"></i
+                  ></span>
                 </div>
               </ul>
             </div>
           </div>
         </div>
+        <div class="dropdown-content2" id="dropdown_content2">
+          <ul>
+            <li><a href="">Industries</a></li>
+            <li><a href="">Solution</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Why Us</a></li>
+            <li><a href="">Request A Quote</a></li>
+          </ul>
+        </div>
       </header>
       <!--Header Ends-->
 
-      <!-- caht option -->
-      <div class="chat_option">
-        <i class="fa-regular fa-comment fa-beat-fade"></i>
+      <!-- Banner section start -->
+
+      <section>
+        <div class="banner_main">
+          <div class="banner_innermain">
+            <div class="banner_inner1">
+              <div class="banner_inner1_heading">
+                <div class="banner_heading1">
+                  <h1>
+                    Clean, Safe, and Healthy facilities for all industries
+                  </h1>
+                </div>
+                <div class="banner_para1">
+                  <p>
+                    We keep facilities protected with specialized services and
+                    powerful solutions.
+                  </p>
+                </div>
+                <div class="banner_button">
+                  <button class="custom_button">Request A Quote</button>
+                </div>
+              </div>
+              <div class="banner_logodiv">
+                <p>We are trusted by 200+ facilities</p>
+                <div class="banner_logoimg">
+                  <div>
+                    <a href=""
+                      ><img
+                        src="img/0b4316df32a80570e6253213bebe7ffdbebbeb7a.svg"
+                        alt=""
+                    /></a>
+                  </div>
+                  <div>
+                    <a href=""
+                      ><img
+                        src="img/22475956-d24c-44c4-bd3b-3e355c518914-1580346915422.png"
+                        alt=""
+                    /></a>
+                  </div>
+                  <div>
+                    <a href=""
+                      ><img src="img/5e88a6784fbaeafdcc1c25ec_Cuboh.svg" alt=""
+                    /></a>
+                  </div>
+                  <div>
+                    <a href=""><img src="img/Podium_Logo 1.svg" alt="" /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="banner_inner2">
+            <div class="banner_image">
+              <img src="img/covid-19.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Banner section Ends -->
+
+      <!-- caht option start-->
+      <div class="chat_option" >
+        <i class="fa-regular fa-comment "></i>
         <br />
-        <a>Get Help</a>
+        <a class="chat_text">Get Help</a>
       </div>
+      <!-- chat option ends -->
+
+      <section>
+        <div class="b_hading p60">
+          <div class="heading">
+            <h2>
+              Every working facility has its own unique set of maintenance
+              requirements. At Able, we identify, understand, and create healthy
+              solutions to keep facilities well-managed
+            </h2>
+          </div>
+        </div>
+      </section>
 
       <!-- service section start -->
       <section>
         <!-- padding 0px to remove default padding of container-fluid ///////////// -->
-        <div class="container-fluid" style="padding-left:0px;"> 
-          <div class="service_main">
+        <div class="container-fluid" style="padding-left: 0px">
+          <div class="service_main p60">
             <div class="service_heading_main">
               <div class="service_heaing"><h1>Our Services</h1></div>
               <div class="service_paragraph">
                 <p>
                   <!-- br to break the line ///////////////////////////////////////////////////-->
-                  We have built our company with one goal in mind, to <br> 
+                  We have built our company with one goal in mind, to <br />
                   Customer expectations.
                 </p>
               </div>
@@ -143,7 +222,10 @@
                     Customer expectations.
                   </p>
                 </div>
-                <div class="learn_link"><a href="">Learn More </a><i class="fa-solid fa-angle-right fa-beat-fade"></i></div>
+                <div class="learn_link">
+                  <a href="">Learn More </a
+                  ><i class="fa-solid fa-angle-right fa-beat-fade"></i>
+                </div>
               </div>
               <div class="s_card">
                 <div><h4>Electrostatic Disinfection</h4></div>
@@ -153,7 +235,10 @@
                     Customer expectations.
                   </p>
                 </div>
-                <div class="learn_link"><a href="">Learn More </a><i class="fa-solid fa-angle-right fa-beat-fade"></i></div>
+                <div class="learn_link">
+                  <a href="">Learn More </a
+                  ><i class="fa-solid fa-angle-right fa-beat-fade"></i>
+                </div>
               </div>
               <div class="s_card">
                 <div><h4>Terminal Cleaning</h4></div>
@@ -163,17 +248,23 @@
                     Customer expectations.
                   </p>
                 </div>
-                <div class="learn_link"><a href="">Learn More </a><i class="fa-solid fa-angle-right fa-beat-fade"></i></div>
+                <div class="learn_link">
+                  <a href="">Learn More </a
+                  ><i class="fa-solid fa-angle-right fa-beat-fade"></i>
+                </div>
               </div>
               <div class="s_card">
-                <div><h4>Green Cleaning </h4></div>
+                <div><h4>Green Cleaning</h4></div>
                 <div>
                   <p>
                     We have built our company with one goal in mind, to exceed
                     Customer expectations.
                   </p>
                 </div>
-                <div class="learn_link"><a href="">Learn More </a><i class="fa-solid fa-angle-right fa-beat-fade"></i></div>
+                <div class="learn_link">
+                  <a href="">Learn More </a
+                  ><i class="fa-solid fa-angle-right fa-beat-fade"></i>
+                </div>
               </div>
               <div class="s_card">
                 <div><h4>Hard Floor Care</h4></div>
@@ -183,7 +274,10 @@
                     Customer expectations.
                   </p>
                 </div>
-                <div class="learn_link"><a href="">Learn More </a><i class="fa-solid fa-angle-right fa-beat-fade"></i></div>
+                <div class="learn_link">
+                  <a href="">Learn More </a
+                  ><i class="fa-solid fa-angle-right fa-beat-fade"></i>
+                </div>
               </div>
               <div class="s_card">
                 <div><h4>Carpet Care</h4></div>
@@ -193,7 +287,10 @@
                     Customer expectations.
                   </p>
                 </div>
-                <div class="learn_link"><a href="">Learn More </a><i class="fa-solid fa-angle-right fa-beat-fade"></i></div>
+                <div class="learn_link">
+                  <a href="">Learn More </a
+                  ><i class="fa-solid fa-angle-right fa-beat-fade"></i>
+                </div>
               </div>
               <div class="s_card">
                 <div><h4>Healthcare Enviro. Services</h4></div>
@@ -203,27 +300,36 @@
                     Customer expectations.
                   </p>
                 </div>
-                <div class="learn_link"><a href="">Learn More </a><i class="fa-solid fa-angle-right fa-beat-fade"></i></div>
+                <div class="learn_link">
+                  <a href="">Learn More </a
+                  ><i class="fa-solid fa-angle-right fa-beat-fade"></i>
+                </div>
               </div>
               <div class="s_card">
-                <div><h4>Event Center Cleaning </h4></div>
+                <div><h4>Event Center Cleaning</h4></div>
                 <div>
                   <p>
                     We have built our company with one goal in mind, to exceed
                     Customer expectations.
                   </p>
                 </div>
-                <div class="learn_link"><a href="">Learn More </a><i class="fa-solid fa-angle-right fa-beat-fade"></i></div>
+                <div class="learn_link">
+                  <a href="">Learn More </a
+                  ><i class="fa-solid fa-angle-right fa-beat-fade"></i>
+                </div>
               </div>
               <div class="s_card">
-                <div><h4>Tile & Grout Restoration </h4></div>
+                <div><h4>Tile & Grout Restoration</h4></div>
                 <div>
                   <p>
                     We have built our company with one goal in mind, to exceed
                     Customer expectations.
                   </p>
                 </div>
-                <div class="learn_link"><a href="">Learn More </a><i class="fa-solid fa-angle-right fa-beat-fade"></i></div>
+                <div class="learn_link">
+                  <a href="">Learn More </a
+                  ><i class="fa-solid fa-angle-right fa-beat-fade"></i>
+                </div>
               </div>
             </div>
             <div class="service_button">
@@ -232,9 +338,6 @@
           </div>
         </div>
       </section>
-
-
-
 
       <!-- Employee section-->
       <section class="employee_section">
@@ -283,24 +386,24 @@
 
       <!-- employee section ends -->
 
-      <div class="container">
-        <div class="serve_maindiv">
-          <div class="heading">
-            <h1>The Industries We Serve</h1>
-          </div>
-          <div class="paragraph">
-            <p>
-              We have built our company with one goal in mind, to exceed
-              Customer expectations.
-            </p>
-          </div>
+      <!-- <div class="container"> -->
+      <div class="serve_maindiv p60">
+        <div class="heading">
+          <h1>The Industries We Serve</h1>
+        </div>
+        <div class="paragraph">
+          <p>
+            We have built our company with one goal in mind, to exceed Customer
+            expectations.
+          </p>
         </div>
       </div>
+      <!-- </div> -->
 
       <!-- card section -->
 
       <section>
-        <div class="container-fluid" style="padding: 0px">
+        <div class="container-fluid">
           <div class="card_main">
             <div class="owl-carousel owl-theme owl-carousel1">
               <div class="card">
@@ -318,6 +421,7 @@
                 </div>
                 <div class="card_button">
                   <a href="">Learn More</a>
+                  <i class="fa-solid fa-angle-right fa-beat-fade"></i>
                 </div>
               </div>
               <div class="card">
@@ -335,6 +439,7 @@
                 </div>
                 <div class="card_button">
                   <a href="">Learn More</a>
+                  <i class="fa-solid fa-angle-right fa-beat-fade"></i>
                 </div>
               </div>
               <div class="card">
@@ -352,6 +457,7 @@
                 </div>
                 <div class="card_button">
                   <a href="">Learn More</a>
+                  <i class="fa-solid fa-angle-right fa-beat-fade"></i>
                 </div>
               </div>
               <div class="card">
@@ -369,6 +475,7 @@
                 </div>
                 <div class="card_button">
                   <a href="">Learn More</a>
+                  <i class="fa-solid fa-angle-right fa-beat-fade"></i>
                 </div>
               </div>
               <div class="card">
@@ -386,6 +493,7 @@
                 </div>
                 <div class="card_button">
                   <a href="">Learn More</a>
+                  <i class="fa-solid fa-angle-right fa-beat-fade"></i>
                 </div>
               </div>
               <div class="card">
@@ -403,7 +511,18 @@
                 </div>
                 <div class="card_button">
                   <a href="">Learn More</a>
+                  <i class="fa-solid fa-angle-right fa-beat-fade"></i>
                 </div>
+              </div>
+            </div>
+            <div class="carousel_button card_button1">
+              <div class="button_inner">
+                <button class="leftarrow1 custom_button">
+                  <i class="fa-solid fa-angle-left"></i>
+                </button>
+                <button class="rightarrow1 custom_button">
+                  <i class="fa-solid fa-angle-right"></i>
+                </button>
               </div>
             </div>
           </div>
@@ -433,7 +552,7 @@
                     <button class="custom_button map_btn">2</button>
                   </h4>
                   <h4>
-                    New Jersey <button class="custom_button map_btn">HQ</button>
+                    New Jersey <button class="custom_button  map_btn1">HQ</button>
                   </h4>
                 </div>
                 <button class="custom_button map_btn2">Request A Quote</button>
@@ -446,14 +565,83 @@
 
       <!-- carousel section -->
 
-      <section>
-        <div class="carousel_main">
-          <div class="crousel_inner">
-            <div class="owl-carousel owl-theme">
-              <div class="item"><img src="img/Group 145.jpg" alt="" /></div>
-              <div class="item"><img src="img/Group 145.jpg" alt="" /></div>
-              <div class="item"><img src="img/Group 145.jpg" alt="" /></div>
-              <div class="item"><img src="img/Group 145.jpg" alt="" /></div>
+      <section class="carousel_main_section">
+        <div class="container">
+          <div class="inner_main">
+            <div class="owl-carousel owl-carousel2 owl-theme">
+              <div class="item">
+                <div class="item_img">
+                  <img src="img/ZtC4_rPCRXA (1).jpg" alt="" />
+                </div>
+                <div class="main_item">
+                  <div class="before_img">
+                    <img src="img/bimg.svg" alt="" />
+                  </div>
+                  <div class="item_para">
+                    <p class="para1">
+                      If you're looking for a full service janitorial provider
+                      with quality products and services you can trust, then
+                      give them a call!”
+                    </p>
+                    <p class="para2">John Doe, Government Office</p>
+                  </div>
+                  <div class="before_img">
+                    <img src="img/after.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item_img">
+                  <img src="img/ZtC4_rPCRXA (1).jpg" alt="" />
+                </div>
+                <div class="main_item">
+                  <div class="before_img">
+                    <img src="img/bimg.svg" alt="" />
+                  </div>
+                  <div class="item_para">
+                    <p class="para1">
+                      If you're looking for a full service janitorial provider
+                      with quality products and services you can trust, then
+                      give them a call!”
+                    </p>
+                    <p class="para2">John Doe, Government Office</p>
+                  </div>
+                  <div class="before_img">
+                    <img src="img/after.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item_img">
+                  <img src="img/ZtC4_rPCRXA (1).jpg" alt="" />
+                </div>
+                <div class="main_item">
+                  <div class="before_img">
+                    <img src="img/bimg.svg" alt="" />
+                  </div>
+                  <div class="item_para">
+                    <p class="para1">
+                      If you're looking for a full service janitorial provider
+                      with quality products and services you can trust, then
+                      give them a call!”
+                    </p>
+                    <p class="para2">John Doe, Government Office</p>
+                  </div>
+                  <div class="before_img">
+                    <img src="img/after.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel_button">
+              <div class="button_inner">
+                <button class="leftarrow2 custom_button">
+                  <i class="fa-solid fa-angle-left"></i>
+                </button>
+                <button class="rightarrow2 custom_button">
+                  <i class="fa-solid fa-angle-right"></i>
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -485,7 +673,7 @@
                   <div class="accordion-item">
                     <h2 class="accordion-header">
                       <button
-                        class="accordion-button collapsed"
+                        class="accordion-button accordion-button1"
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target="#flush-collapseOne"
@@ -563,8 +751,8 @@
 
       <!-- Wrok Section Ends -->
 
-      <!--Section Starts-->
-      <section class="form_section">
+      <!-- Form Section Starts-->
+      <section class="form_section p60">
         <div class="form_maindiv">
           <div class="form_heading">
             <h1>Get Your Free Quote Today!</h1>
@@ -579,6 +767,7 @@
                   type="text"
                   id="exampleInputEmail1"
                   placeholder="Full Name"
+                  required
                 />
               </div>
               <div class="mb-3">
@@ -586,6 +775,7 @@
                   type="email"
                   id="exampleInputPassword1"
                   placeholder="Email ID"
+                  required
                 />
               </div>
               <div class="mb-3">
@@ -593,6 +783,7 @@
                   type="tel"
                   id="exampleInputEmail1"
                   placeholder="Phone Number"
+                  required
                 />
               </div>
               <div class="mb-3">
@@ -600,6 +791,7 @@
                   type="text"
                   id="exampleInputPassword1"
                   placeholder="Company Name"
+                  required
                 />
               </div>
               <div class="form_smtbtn">
@@ -612,8 +804,8 @@
       <!--Section Ends-->
 
       <!--Footer Starts-->
-      <footer>
-        <section class="footer_section">
+      <footer data-midnight="blue">
+        <section class="footer_section" >
           <div class="container">
             <div class="footer_item">
               <div class="logo">
@@ -741,6 +933,30 @@
     </script>
 
     <script>
+      //hamburder icon and cross icon
+      document.addEventListener("DOMContentLoaded", function () {
+        var hamburgerIcon = document.getElementById("hamburger_icon");
+        var crossIcon = document.getElementById("cross_icon");
+        var dropdowncon2 = document.getElementById("dropdown_content2");
+        var body = document.getElementById('main_body');
+        // Initially hide the cross icon
+        crossIcon.style.display = "none";
+
+        // Toggle icons on click
+          hamburgerIcon.addEventListener("click", function () {
+          hamburgerIcon.style.display = "none";
+          crossIcon.style.display = "inline-block";
+          dropdowncon2.style.left = "0%";
+          body.style.overflow='hidden';
+        });
+
+        crossIcon.addEventListener("click", function () {
+          crossIcon.style.display = "none";
+          hamburgerIcon.style.display = "inline-block";
+          dropdowncon2.style.left = "-100%";
+          body.style.overflow = "visible";
+        });
+      });
       // Optional: If you want to close the list when the cursor moves away from it
       const showList = document.getElementById("show_list");
       const listItem = document.querySelector(".list_item");
@@ -764,9 +980,10 @@
       // owl crousel one
 
       $(".owl-carousel1").owlCarousel({
+        stagePadding:20,
         loop: true,
         margin: 10,
-        nav: true,
+        nav: false,
         responsive: {
           0: {
             items: 1,
@@ -777,6 +994,9 @@
           1000: {
             items: 3,
           },
+          1000: {
+            items: 4,
+          },
         },
       });
 
@@ -784,7 +1004,7 @@
       $(".owl-carousel").owlCarousel({
         loop: true,
         margin: 10,
-        nav: true,
+        nav: false,
         responsive: {
           0: {
             items: 1,
@@ -800,13 +1020,35 @@
 
       // owl carousel ends
 
+      $(".leftarrow1").click(function (e) {
+        $(".owl-carousel1").trigger("prev.owl"); 
+      });
+      $(".rightarrow1").click(function (e) {
+        $(".owl-carousel1").trigger("next.owl"); 
+      });
+
+
+      $(".leftarrow2").click(function (e) {
+        $(".owl-carousel2").trigger("prev.owl"); 
+      });
+      $(".rightarrow2").click(function (e) {
+        $(".owl-carousel2").trigger("next.owl"); 
+      });
+
       // counter
       $(".count").counterUp({
         delay: 20,
         time: 1000,
       });
-    </script>
 
+
+      // Start midnight
+      $(document).ready(function(){
+        // Change this to the correct selector.
+        $('.chat_option').midnight();
+
+      });
+</script>
     <!-- JS Ends-->
   </body>
   <!-- Body Ends-->
@@ -815,3 +1057,5 @@
 <!-- https://www.figma.com/file/QPOIG8ZBCxQf63jTYCAOSa/Able-(Copy)?type=design&node-id=1006%3A27558&mode=design&t=1pxAfAUcvV1pShFa-1 -->
 
 <!-- swiper owlcarousel -->
+
+<!-- https://simpletesting.website/coquihalla/ -->
